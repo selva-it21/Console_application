@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Login {
     List<Members> members;
+
     public void login(List<Members> members){
         Scanner sc = new Scanner(System.in);
         // operation.display(role, sc);
@@ -32,7 +33,7 @@ public class Login {
     }
     public void afterLogout(List<Members> members){
         Login log = new Login();
-        System.out.println("After logout called");
+        // System.out.println("After logout called");
         log.login(members);
     }
 
